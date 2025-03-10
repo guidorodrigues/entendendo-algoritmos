@@ -24,3 +24,5 @@ console.log(pesquisa_binaria(minha_lista, 3)); // retorna 1
 console.log(pesquisa_binaria(minha_lista, 1)); // retorna 0
 console.log(pesquisa_binaria(minha_lista, 8)); // retorna null (não encontrado)
 
+
+
