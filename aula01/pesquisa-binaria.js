@@ -1,19 +1,19 @@
 
 function pesquisa_binaria(lista, item) {
-    let baixo = 0;
-    let alto = lista.length - 1;
+    let baixo = 0; //Começamos no primeiro número da lista  
+    let alto = lista.length - 1; //Último número da lista 
 
-    while (baixo <= alto) {
-        let meio = Math.floor((baixo + alto) / 2);
-        let chute = lista[meio];
+    while (baixo <= alto) {//Enquanto não tiver terminado a busca  
+        let meio = Math.floor((baixo + alto) / 2);//Pegamos o numero do meio
+        let chute = lista[meio]; //Pegamos o chute do meio
 
-        if (chute === item) {
-            return meio;
+        if (chute === item) { //se o chute for maior que o item
+            return meio; // retornar a posição dele
         }
-        if (chute > item) {
-            alto = meio - 1;
+        if (chute > item) { // Se o número for maior que o que queremos...
+            alto = meio - 1; //  Procuramos só na parte de baixo da lista
         } else {
-            baixo = meio + 1;
+            baixo = meio + 1; //Procuramos só na parte de cima da lista
         }
     }
     return null;
@@ -22,30 +22,5 @@ function pesquisa_binaria(lista, item) {
 const minha_lista = [1, 3, 5, 7, 9];
 console.log(pesquisa_binaria(minha_lista, 3)); // retorna 1
 console.log(pesquisa_binaria(minha_lista, 1)); // retorna 0
- 
+console.log(pesquisa_binaria(minha_lista, 8)); // retorna null (não encontrado)
 
-
-/*
-function pesquisa_binaria(lista, item) {
-    baixo = 0;
-    alto = len(lista -1)
-
-    while(baixo<= alto){
-        meio = (baixo+alto)/2 
-        chute = lista[meio]
-        
-        if( chute == item ){
-            return meio      }
-    }
-    if(chute > item){
-        alto = meio -1
-    }else{
-        baixo = meio  +1
-        return null    
-    }
-
-    minha_lista = [1,3,5,7,9]
-    console.log(pesquisa_binaria(minha_lista, [3]))//retorna 1
-    console.log(pesquisa_binaria(minha_lista, [1]))//retorna null
-
-*/
