@@ -22,7 +22,7 @@ Inicio
       escreval
       escreval("Codigo: ", codigo)
       escreval
-      escreval("Dados da pessoa: Gênero ", genero, " e", idade, " anos de idade")
+      escreval("Dados da pessoa: Gï¿½nero ", genero, " e", idade, " anos de idade")
       escreval
       escreval("Mais alguma coisa?!")
 Fimalgoritmo
