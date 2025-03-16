@@ -1,2 +1,2 @@
 # entendendo-algoritmos
- exercicios de algoritimo 
+ exercicios de algoritimo com VisualG
