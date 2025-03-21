@@ -1,13 +1,13 @@
 Algoritmo "semnome"
 
-Var
+Var = 
 nome1, nome2:caractere
 idade1, idade2:inteiro
 media:real
 
 Inicio
       Nome1<-"Maria Silva"
-      nome2<-"João Melo"
+      nome2<-"JoÃ£o Melo"
       idade1<-19
       idade2<-20
       
